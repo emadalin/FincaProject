@@ -2,23 +2,24 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Image } from 'expo-image';
-import { Alert, Pressable, StyleSheet, Text, View } from 'react-native';
+import { router } from 'expo-router';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
   const handleRestaurant = () => {
-    Alert.alert('Button Pressed!');
+    router.push('/restaurant');
   };
   const handleCafe = () => {
-    Alert.alert('Button Pressed!');
+    router.push('/cafe');
   };
   const handleDayTrips = () => {
-    Alert.alert('Button Pressed!');
+    router.push('/daytrips');
   };
   const handleOvernightTrips = () => {
-    Alert.alert('Button Pressed!');
+    router.push('/overnighttrips');
   };
   const handleTransportation = () => {
-    Alert.alert('Button Pressed!');
+    router.push('/transportation');
   };
 
   return (
