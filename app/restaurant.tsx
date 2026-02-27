@@ -8,6 +8,8 @@ const data = [
   { id: '3', name: 'La Ventanita del Mexicana - Ciudad Colon' },
   { id: '4', name: 'Antica Pizzeria Napoletana - Santa Ana' },
   { id: '5', name: 'Nacion Sushi - Santa Ana' },
+  { id: '6', name: 'La Choza de Joel - Ciudad Colon' },
+  { id: '7', name: 'Plaza de Comidas Containers - Ciudad Colon' },
 ];
 
 export default function RestaurantScreen() {

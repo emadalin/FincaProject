@@ -5,7 +5,7 @@ import { Image } from 'expo-image';
 import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function HomeScreen() {
+export default function RecommendationsScreen() {
   const handleRestaurant = () => {
     router.push('/restaurant');
   };

@@ -6,6 +6,7 @@ const data = [
   { id: '1', name: 'Tulsi Café - Ciudad Colon' },
   { id: '2', name: 'Casa Amara - Ciudad Colon' },
   { id: '3', name: 'Café Colon - Ciudad Colon' },
+  { id: '4', name: 'Tulipan Repostería - Ciudad Colon' },
 ];
 
 export default function CafeScreen() {
