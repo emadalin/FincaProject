@@ -30,3 +30,8 @@ export default function RestaurantScreen() {
         </View>
     );
 }
+
+export const screenOptions = {
+  title: 'Restaurants and Sodas',      // Top title
+  headerBackTitle: 'Back',   // Text on the back button
+};

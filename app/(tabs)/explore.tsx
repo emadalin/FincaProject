@@ -38,38 +38,35 @@ export default function ResourcesScreen() {
           onPress={handleContacts}>
             <Text style={styles.buttonText}>Contacts</Text>
         </Pressable>
-      </View>
-      <View style={styles.container}>
+
         <Pressable
           style={styles.boxButton}
           onPress={handleSlang}>
             <Text style={styles.buttonText}>Popular Slang and Expressions</Text>
         </Pressable>
-      </View>
-      <View style={styles.container}>
+
         <Pressable
           style={styles.boxButton}
           onPress={handlePacking}>
             <Text style={styles.buttonText}>Packing List</Text>
         </Pressable>
-      </View>
-      <View style={styles.container}>
+
         <Pressable
           style={styles.boxButton}
           onPress={handleVolunteer}>
             <Text style={styles.buttonText}>Volunteer Opportunities</Text>
         </Pressable>
       </View>
-
+    
     </ParallaxScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 4,
+    justifyContent: "center"
   },
   stepContainer: {
     gap: 8,
@@ -82,19 +79,23 @@ const styles = StyleSheet.create({
   },
   container: {
     alignItems: 'center',
-    marginVertical: 8,
+    padding: 20,
+    justifyContent: "center",
+    gap: 30,
+    width: '100%'
   },
   boxButton: {
     backgroundColor: '#8FD9FB',
-    paddingVertical: 15,
+    paddingVertical: 25,
     paddingHorizontal: 25,
     borderRadius: 8,
     alignItems: 'center',
-    marginVertical: 0,
+    width: '90%'
   },
   buttonText: {
     color: 'white',
     fontSize: 17,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center'
   },
 });
