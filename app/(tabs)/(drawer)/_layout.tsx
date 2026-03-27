@@ -1,5 +1,5 @@
 import { Drawer } from 'expo-router/drawer';
-const Layout = () => {
+export default function Layout() {
     return (
         <Drawer />
     )

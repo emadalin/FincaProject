@@ -14,7 +14,7 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{flex: 1}}>
       <Stack>
-        <Stack.Screen name="(drawer)" />
+        <Stack.Screen name="(tabs)/(drawers)" />
       </Stack>
     </GestureHandlerRootView>
   );
