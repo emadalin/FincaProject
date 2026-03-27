@@ -1,11 +1,16 @@
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Image } from 'expo-image';
-import { router } from 'expo-router';
+import { router, useNavigation } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+const LocationsDrawer = createDrawerNavigator();
+
 export default function RecommendationsScreen() {
+  const navigation = useNavigation();
+
   const handleRestaurant = () => {
     router.push('/restaurant');
   };
