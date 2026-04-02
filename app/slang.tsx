@@ -3,11 +3,12 @@ import React from 'react';
 import { FlatList, Pressable, Text, View } from 'react-native';
 
 const data = [
-  { id: '1', name: 'Baldi Hot Springs - Fortuna' },
-  { id: '2', name: 'Calle Pasto Hiking - Ciudad Colon' },
+  { id: '1', name: 'Gata' },
+  { id: '2', name: 'Rigo' },
+  { id: '3', name: 'Jimmy' },
 ];
 
-export default function DayTripsScreen() {
+export default function SlangScreen() {
     return (
         <View style={{ flex: 1, padding: 16 }}>
         <FlatList
@@ -16,7 +17,7 @@ export default function DayTripsScreen() {
             renderItem={({ item }) => (
             <Pressable
                 style={{ padding: 12, borderBottomWidth: 1 }}
-                onPress={() => router.push(`/daytrips?id=${item.id}`)}
+                onPress={() => router.push(`/slang?id=${item.id}`)}
             >
                 <Text>{item.name}</Text>
             </Pressable>
@@ -25,3 +26,8 @@ export default function DayTripsScreen() {
         </View>
     );
 }
+
+export const screenOptions = {
+  title: 'Slang',      // Top title
+  headerBackTitle: 'Back',   // Text on the back button
+};

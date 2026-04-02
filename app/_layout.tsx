@@ -4,17 +4,86 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
 export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   return (
     <GestureHandlerRootView style={{flex: 1}}>
       <Stack>
-        <Stack.Screen name="(tabs)/(drawers)" />
+        <Stack.Screen 
+          name="(tabs)"
+          options= {{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="restaurant"
+          options= {{ 
+            title: 'Restaurants',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="cafe"
+          options= {{ 
+            title: 'Cafés',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="daytrips"
+          options= {{ 
+            title: 'Day Trips',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="lodging"
+          options= {{ 
+            title: 'Places to Stay',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="transportation"
+          options= {{ 
+            title: 'Transportation',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="contacts"
+          options= {{ 
+            title: 'Contacts',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="slang"
+          options= {{ 
+            title: 'Slang',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="packing"
+          options= {{ 
+            title: 'Packing',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="service"
+          options= {{ 
+            title: 'Service Opportunities',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="guidebook"
+          options= {{ 
+            title: 'Guidebook',
+            headerBackTitle: 'Back' ,
+          }}
+        />
       </Stack>
     </GestureHandlerRootView>
   );

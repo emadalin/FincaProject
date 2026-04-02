@@ -2,20 +2,24 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Image } from 'expo-image';
+import { router } from 'expo-router';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function ResourcesScreen() {
   const handleContacts = () => {
-    
+    router.push('/contacts');
   };
   const handleSlang = () => {
-    
+    router.push('/slang');
   };
   const handlePacking = () => {
-    
+    router.push('/packing');
   };
-  const handleVolunteer = () => {
-    
+  const handleService = () => {
+    router.push('/service');
+  };
+  const handleGuidebook = () => {
+    router.push('/guidebook');
   };
 
   return (
@@ -42,7 +46,7 @@ export default function ResourcesScreen() {
         <Pressable
           style={styles.boxButton}
           onPress={handleSlang}>
-            <Text style={styles.buttonText}>Popular Slang and Expressions</Text>
+            <Text style={styles.buttonText}>Tico Slang</Text>
         </Pressable>
 
         <Pressable
@@ -53,8 +57,14 @@ export default function ResourcesScreen() {
 
         <Pressable
           style={styles.boxButton}
-          onPress={handleVolunteer}>
-            <Text style={styles.buttonText}>Volunteer Opportunities</Text>
+          onPress={handleService}>
+            <Text style={styles.buttonText}>Service Opportunities</Text>
+        </Pressable>
+
+        <Pressable
+          style={styles.boxButton}
+          onPress={handleGuidebook}>
+            <Text style={styles.buttonText}>Guidebook</Text>
         </Pressable>
       </View>
     
