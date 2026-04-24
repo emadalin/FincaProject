@@ -16,6 +16,7 @@ export default function ContactsScreen() {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
             <Pressable
+                disabled={true}
                 style={{ padding: 12, borderBottomWidth: 1 }}
                 onPress={() => router.push(`/contacts?id=${item.id}`)}
             >

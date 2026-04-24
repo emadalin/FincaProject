@@ -15,6 +15,7 @@ export default function DayTripsScreen() {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
             <Pressable
+                disabled={true}
                 style={{ padding: 12, borderBottomWidth: 1 }}
                 onPress={() => router.push(`/daytrips?id=${item.id}`)}
             >

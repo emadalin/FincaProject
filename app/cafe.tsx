@@ -3,10 +3,10 @@ import React from 'react';
 import { FlatList, Pressable, Text, View } from 'react-native';
 
 const data = [
-  { id: '1', name: 'Tulsi Café - Ciudad Colon' },
-  { id: '2', name: 'Casa Amara - Ciudad Colon' },
-  { id: '3', name: 'Café Colon - Ciudad Colon' },
-  { id: '4', name: 'Tulipan Repostería - Ciudad Colon' },
+  { id: '1', name: 'Tulsi Café y Plantas - Ciudad Colón' },
+  { id: '2', name: 'Casa Amara - Ciudad Colón' },
+  { id: '3', name: 'Café Colon - Ciudad Colón' },
+  { id: '4', name: 'Tulipan Repostería - Ciudad Colón' },
 ];
 
 export default function CafeScreen() {
@@ -17,6 +17,7 @@ export default function CafeScreen() {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
             <Pressable
+                disabled={true}
                 style={{ padding: 12, borderBottomWidth: 1 }}
                 onPress={() => router.push(`/cafe?id=${item.id}`)}
             >

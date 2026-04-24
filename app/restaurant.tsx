@@ -20,6 +20,7 @@ export default function RestaurantScreen() {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
             <Pressable
+                disabled={true}
                 style={{ padding: 12, borderBottomWidth: 1 }}
                 onPress={() => router.push(`/restaurant?id=${item.id}`)}
             >

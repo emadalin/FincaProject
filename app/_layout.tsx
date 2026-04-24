@@ -84,6 +84,83 @@ export default function RootLayout() {
             headerBackTitle: 'Back' ,
           }}
         />
+        <Stack.Screen 
+          name="misc"
+          options= {{ 
+            title: 'Miscellaneous',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="ma_restaurant"
+          options= {{ 
+            title: 'Restaurants',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="ma_cafe"
+          options= {{ 
+            title: 'Cafés',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="ma_daytrips"
+          options= {{ 
+            title: 'Day Trips',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="ma_lodging"
+          options= {{ 
+            title: 'Places to Stay',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="ma_transportation"
+          options= {{ 
+            title: 'Transportation',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="j_restaurant"
+          options= {{ 
+            title: 'Restaurants',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="j_cafe"
+          options= {{ 
+            title: 'Cafés',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="j_daytrips"
+          options= {{ 
+            title: 'Day Trips',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="j_lodging"
+          options= {{ 
+            title: 'Places to Stay',
+            headerBackTitle: 'Back' ,
+          }}
+        />
+        <Stack.Screen 
+          name="j_transportation"
+          options= {{ 
+            title: 'Transportation',
+            headerBackTitle: 'Back' ,
+          }}
+        />
       </Stack>
     </GestureHandlerRootView>
   );

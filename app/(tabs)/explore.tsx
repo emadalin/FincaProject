@@ -21,6 +21,9 @@ export default function ResourcesScreen() {
   const handleGuidebook = () => {
     router.push('/guidebook');
   };
+  const handleMisc = () => {
+    router.push('/misc');
+  };
 
   return (
     <ParallaxScrollView
@@ -65,6 +68,12 @@ export default function ResourcesScreen() {
           style={styles.boxButton}
           onPress={handleGuidebook}>
             <Text style={styles.buttonText}>Guidebook</Text>
+        </Pressable>
+
+        <Pressable
+          style={styles.boxButton}
+          onPress={handleMisc}>
+            <Text style={styles.buttonText}>Miscellaneous</Text>
         </Pressable>
       </View>
     

@@ -18,6 +18,7 @@ export default function TransportationScreen() {
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
             <Pressable
+                disabled={true}
                 style={{ padding: 12, borderBottomWidth: 1 }}
                 onPress={() => router.push(`/transportation?id=${item.id}`)}
             >
